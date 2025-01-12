@@ -1,0 +1,33 @@
+the Series is 1-Dimensional
+	
+
+the DataFrame is 2-Dimensional, each column contains the same data type
+	* a collection of series objects.
+	* real-world objects
+	
+
+
+if the series represents items in an array, let's for instance say that we have some objects that Old McDonald owns: duck, horse, cat, cow, dog.  The animals will represent the items in the series. The DataFrame will represent a structured table of data with rows and columns where each column is a Series. Each Series holds information about one attribute or feature of the objects.
+
+For example, if Old McDonald owns animals, we can create a DataFrame where:
+
+Each row represents an animal that Old McDonald owns (e.g., duck, horse, cat, cow, dog).
+Each column represents a feature or property of those animals (e.g., type, color, sound they make).
+Example:
+
+Animal:		Type:		Color:		Sound:
+Duck		Bird		White		Quack
+Horse		Mammal		Brown		Neigh
+Cat		Mammal		Black		Meow
+Cow		Mammal		White		Moo
+Dog		Mammal		Golden		Bark
+
+The Animal is a column, and can be listed (much like an array) -> animals = pd.Series(['Duck', 'Horse', 'Cat', 'Cow', 'Dog']) and this is the DATA
+
+The DataFrame is the DATA with DIFFERENT ATTRIBUTES, it looks more like this if you look at it in a way such as a json file: 
+data = {
+    'Animal': ['Duck', 'Horse', 'Cat', 'Cow', 'Dog'],
+    'Type': ['Bird', 'Mammal', 'Mammal', 'Mammal', 'Mammal'],
+    'Color': ['White', 'Brown', 'Black', 'White', 'Golden'],
+    'Sound': ['Quack', 'Neigh', 'Meow', 'Moo', 'Bark']
+}
